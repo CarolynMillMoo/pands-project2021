@@ -51,15 +51,15 @@ with open("iris.txt", "a") as f:
 data = pd.read_csv("iris.csv")
 
 sum_petallength = data["petallengthcm"].sum()
-mean_petallength = data["petallength"].mean()
-median_petallength = data["sepalwidthcm"].median()
+mean_petallength = data["petallengthcm"].mean()
+median_petallength = data["petallengthcm"].median()
 
-print("Sepal Width Sum(cm):",sum_sepalwidth, "\nMean Sepal Width(cm):", mean_sepalwidth, "\nMedian Sepal width(cm):", median_sepalwidth)
+print("Petal Length Sum(cm):",sum_petallength, "\nMean Petal Length(cm):", mean_petallength, "\nMedian Petal Length(cm):", median_petallength)
 
 with open("iris.txt", "a") as f:
-    data = f.write('\nTotal Sepal width all species Sum(cm):'+str(sum_sepalwidth))
-    data = f.write('\nMean Sepal width all species (cm):'+str(mean_sepalwidth))
-    data = f.write('\nMean Sepal width all species (cm): '+str(median_sepalwidth))
+    data = f.write('\nTotal Petal Length all species Sum(cm):'+str(sum_petallength))
+    data = f.write('\nMean Petal Length all species (cm):'+str(mean_petallength))
+    data = f.write('\nMean Petal Length all species (cm): '+str(median_petallength))
 
 
 
