@@ -141,8 +141,32 @@ with open("iris.txt", "a") as f:
 
 #Results: There are some differences between the sums of these measurements in the species, interesting to note.mean_petallengthspecies
 
+#The following code will give us the maximum and minimum values of each measurement
+#and will append this data to the Iris txt file
 
+data = pd.read_csv("iris.csv")
 
+min_sepalwidth = data["sepalwidthcm"].min()
+max_sepalwidth = data["sepalwidthcm"].max()
+min_sepallength = data["sepallengthcm"].min()
+max_sepallength = data["sepallengthcm"].max() 
+min_petalwidth = data["petalwidthcm"].min()
+max_petalwidth = data["petalwidthcm"].max()
+min_petallength = data["petallengthcm"].min()
+max_petallength = data["petallengthcm"].max()
+
+print("\n\nMinimum Sepal width (cm):", min_sepalwidth, "\n\nMaximum Sepal Width (cm):", max_sepalwidth, "\n\nMinimum Sepal length (cm): ", min_sepallength, "\n\nMaximum Sepal length (cm): ", max_sepallength, "\n\nMinimum Petal Width (cm): ", min_petalwidth, "\n\nMaximum Petal width (cm): ", max_petalwidth, "\n\nMinimum Petal length (cm): ", min_petallength, "\n\nMaximum Petal length (cm): ", max_petallength)
+
+with open("iris.txt", "a") as f:
+   data = f.write('\n\nMinimum Sepal width (cm): '+str(min_sepalwidth))
+   data = f.write('\n\nMaximum Sepal width (cm): '+str(max_sepalwidth))
+   data = f.write('\n\nMinimum Sepal length (cm): '+str(min_sepallength))
+   data = f.write('\n\nMaximum Sepal length (cm): '+str(max_sepallength))
+   data = f.write('\n\nMinimum Petal width (cm): '+str(min_petalwidth))
+   data = f.write('\n\nMaximum Petal width (cm): '+str(max_petalwidth))
+   data = f.write('\n\nMinimum Petal length (cm): '+str(min_petallength))
+   data = f.write('\n\nMaximum Petal length (cm): '+str(max_petallength))
+   
 
 
 

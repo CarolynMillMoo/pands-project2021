@@ -86,3 +86,19 @@ Iris-setosa         73.2
 Iris-versicolor    213.0
 Iris-virginica     277.6
 Name: petallengthcm, dtype: float64
+
+Minimum Sepal width (cm): 2.0
+
+Maximum Sepal width (cm): 4.4
+
+Minimum Sepal length (cm): 4.3
+
+Maximum Sepal length (cm): 7.9
+
+Minimum Petal width (cm): 0.1
+
+Maximum Petal width (cm): 2.5
+
+Minimum Petal length (cm): 1.0
+
+Maximum Petal length (cm): 6.9
