@@ -118,6 +118,30 @@ with open("iris.txt", "a") as f:
    data = f.write('\n\nMedian Petal width by species (cm): '+str(median_petalwidthspecies))
    data = f.write('\n\nMedian Petal length by species (cm):'+str(median_petallengthspecies))
 
+#the following calculates the sum of the total sepal width, sepal length, petal width and petal length
+#specific to each species. The sums of these measurements may show if there are significant differences in lengths and widths 
+#Not to be used as a tool to identify between species just for our own information,
+#and also appends this information to the iris txt file
+data = pd.read_csv("iris.csv")
+df = data.groupby("species")
+
+sum_sepalwidthspecies = df["sepalwidthcm"].sum()
+sum_sepallengthspecies = df["sepallengthcm"].sum()
+sum_petalwidthspecies = df["petalwidthcm"].sum()
+sum_petallengthspecies = df["petallengthcm"].sum()
+
+
+print("\n\nSum Sepal Width(cm) by species:", sum_sepalwidthspecies, "\n\nSum Sepal Length(cm) by species: ", sum_sepallengthspecies, "\n\nSum Petal Width (cm) by species: ", sum_petalwidthspecies, "\n\nSum Petal Length (cm) by species: ", sum_petallengthspecies)
+
+with open("iris.txt", "a") as f:
+   data = f.write('\n\nSum Sepal width by species (cm):'+str(sum_sepalwidthspecies))
+   data = f.write('\n\nSum Sepal length by species (cm):'+str(sum_sepallengthspecies))
+   data = f.write('\n\nSum Petal width by species (cm): '+str(sum_petalwidthspecies))
+   data = f.write('\n\nSum Petal length by species (cm):'+str(sum_petallengthspecies))
+
+#Results: There are some differences between the sums of these measurements in the species, interesting to note.mean_petallengthspecies
+
+
 
 
 

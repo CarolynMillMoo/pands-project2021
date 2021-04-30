@@ -1,5 +1,5 @@
-Instance of each species of iris: Iris-virginica     50
-Iris-versicolor    50
+Instance of each species of iris: Iris-versicolor    50
+Iris-virginica     50
 Iris-setosa        50
 Name: species, dtype: int64
 Total Sepal Length all species Sum(cm):876.5
@@ -61,4 +61,28 @@ Median Petal length by species (cm):species
 Iris-setosa        1.50
 Iris-versicolor    4.35
 Iris-virginica     5.55
+Name: petallengthcm, dtype: float64
+
+Sum Sepal width by species (cm):species
+Iris-setosa        170.9
+Iris-versicolor    138.5
+Iris-virginica     148.7
+Name: sepalwidthcm, dtype: float64
+
+Sum Sepal length by species (cm):species
+Iris-setosa        250.3
+Iris-versicolor    296.8
+Iris-virginica     329.4
+Name: sepallengthcm, dtype: float64
+
+Sum Petal width by species (cm): species
+Iris-setosa         12.2
+Iris-versicolor     66.3
+Iris-virginica     101.3
+Name: petalwidthcm, dtype: float64
+
+Sum Petal length by species (cm):species
+Iris-setosa         73.2
+Iris-versicolor    213.0
+Iris-virginica     277.6
 Name: petallengthcm, dtype: float64
