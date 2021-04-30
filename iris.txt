@@ -1,7 +1,10 @@
-Instance of each species of iris: Iris-setosa        50
-Iris-versicolor    50
+Instance of each species of iris: Iris-versicolor    50
+Iris-setosa        50
 Iris-virginica     50
 Name: species, dtype: int64
 Total Sepal Length all species Sum(cm):876.5
 Mean Sepal length all species (cm):5.843333333333335
 Mean Sepal length all species (cm): 5.8
+Total Sepal width all species Sum(cm):458.1
+Mean Sepal width all species (cm):3.0540000000000007
+Mean Sepal width all species (cm): 3.0
