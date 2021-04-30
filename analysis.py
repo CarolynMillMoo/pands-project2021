@@ -89,7 +89,7 @@ mean_petalwidthspecies = df["petalwidthcm"].mean()
 mean_petallengthspecies = df["petallengthcm"].mean()
 
 
-print("\n\nMean Sepal Width(cm) by species:", mean_sepalwidthspecies, "\n\nMean Sepal Length(cm) by species: ", mean_sepallengthspecies, "\n\nMean Petal Width (cm) by species: ", mean_petalwidthspecies, "Mean Petal Length (cm) by species: ", mean_petallengthspecies)
+print("\n\nMean Sepal Width(cm) by species:", mean_sepalwidthspecies, "\n\nMean Sepal Length(cm) by species: ", mean_sepallengthspecies, "\n\nMean Petal Width (cm) by species: ", mean_petalwidthspecies, "\n\nMean Petal Length (cm) by species: ", mean_petallengthspecies)
 
 with open("iris.txt", "a") as f:
    data = f.write('\n\nMean Sepal width by species (cm):'+str(mean_sepalwidthspecies))
@@ -110,13 +110,13 @@ median_petalwidthspecies = df["petalwidthcm"].median()
 median_petallengthspecies = df["petallengthcm"].median()
 
 
-print("\n\nMedian Sepal Width(cm) by species:", mean_sepalwidthspecies, "\n\nMean Sepal Length(cm) by species: ", mean_sepallengthspecies, "\n\nMean Petal Width (cm) by species: ", mean_petalwidthspecies, "Mean Petal Length (cm) by species: ", mean_petallengthspecies)
+print("\n\nMedian Sepal Width(cm) by species:", median_sepalwidthspecies, "\n\nMedian Sepal Length(cm) by species: ", median_sepallengthspecies, "\n\nMedian Petal Width (cm) by species: ", median_petalwidthspecies, "\n\nMedian Petal Length (cm) by species: ", median_petallengthspecies)
 
 with open("iris.txt", "a") as f:
-   data = f.write('\n\nMean Sepal width by species (cm):'+str(mean_sepalwidthspecies))
-   data = f.write('\n\nMean Sepal length by species (cm):'+str(mean_sepallengthspecies))
-   data = f.write('\n\nMean Petal width by species (cm): '+str(mean_petalwidthspecies))
-   data = f.write('\n\nMean Petal length by species (cm):'+str(mean_petallengthspecies))
+   data = f.write('\n\nMedian Sepal width by species (cm):'+str(median_sepalwidthspecies))
+   data = f.write('\n\nMedian Sepal length by species (cm):'+str(median_sepallengthspecies))
+   data = f.write('\n\nMedian Petal width by species (cm): '+str(median_petalwidthspecies))
+   data = f.write('\n\nMedian Petal length by species (cm):'+str(median_petallengthspecies))
 
 
 
