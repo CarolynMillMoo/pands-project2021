@@ -167,9 +167,16 @@ with open("iris.txt", "a") as f:
    data = f.write('\n\nMinimum Petal length (cm): '+str(min_petallength))
    data = f.write('\n\nMaximum Petal length (cm): '+str(max_petallength))
    
+#The following  pair plots the dataset between each column variable.
 
+data= pd.read_csv("iris.csv")
 
+plt.plot(data.IDNumber, data["sepallengthcm"], "r--")
 
-
+plt.title("Plot of ID Number versus sepallength(cm)")
+plt.xlabel("ID Number")
+plt.ylabel("Sepal Length (cm)")
+plt.legend()
+plt.show()
 
 
