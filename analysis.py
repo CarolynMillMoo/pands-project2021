@@ -76,7 +76,19 @@ with open("iris.txt", "a") as f:
     data = f.write('\nMean Petal width all species (cm):'+str(mean_petalwidth))
     data = f.write('\nMean Petal width all species (cm): '+str(median_petalwidth))
 
+#the following calculate the sum, mean and median of the sepal width for all species
+#and also appends this to the iris txt file
+data = pd.read_csv("iris.csv")
+df = data.groupby("species")
 
+mean_sepalwidthspecies = df["sepalwidthcm"].mean()
+
+
+print("\nMean Sepal Width(cm) by species:", mean_sepalwidthspecies)
+
+with open("iris.txt", "a") as f:
+   data = f.write('\n\nMean Sepal width by species (cm):'+str(mean_sepalwidthspecies))
+  
 
 
 
