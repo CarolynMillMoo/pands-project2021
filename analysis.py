@@ -167,16 +167,16 @@ with open("iris.txt", "a") as f:
    data = f.write('\n\nMinimum Petal length (cm): '+str(min_petallength))
    data = f.write('\n\nMaximum Petal length (cm): '+str(max_petallength))
    
-#The following  pair plots the dataset between each column variable.
+#The following plots the sepal width versus sepal length in the three seperate species
 
-data= pd.read_csv("iris.csv")
 
-plt.plot(data.IDNumber, data["sepallengthcm"], "r--")
+iris = sns.load_dataset("iris")
 
-plt.title("Plot of ID Number versus sepallength(cm)")
-plt.xlabel("ID Number")
-plt.ylabel("Sepal Length (cm)")
+
+sns.lmplot(x="sepal_length", y="sepal_width", data=iris, hue="species", fit_reg=False, legend=False)
+
 plt.legend()
 plt.show()
+
 
 
