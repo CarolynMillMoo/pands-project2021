@@ -9,4 +9,6 @@ References:
 3. Fisher Iris Dataset Summary information: https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 4. Fisher Iris Dataset Summary Information: https://www.kaggle.com/arshid/iris-flower-dataset
 5. For the groupby info used in the analysis.py file: https://stackoverflow.com/questions/63420600/how-can-calculate-the-sum-of-a-column-but-taking-specific-rows-of-it-in-python
-
+6.Scatterplot info: Topic08 scatterplot.py
+7.Scatterplot info: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
+8. 
