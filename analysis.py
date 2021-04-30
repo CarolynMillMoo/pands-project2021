@@ -61,6 +61,20 @@ with open("iris.txt", "a") as f:
     data = f.write('\nMean Petal Length all species (cm):'+str(mean_petallength))
     data = f.write('\nMean Petal Length all species (cm): '+str(median_petallength))
 
+#the following calculate the sum, mean and median of the petal width for all species
+#and also appends this to the iris txt file
+data = pd.read_csv("iris.csv")
+
+sum_petalwidth = data["petalwidthcm"].sum()
+mean_petalwidth = data["petalwidthcm"].mean()
+median_petalwidth = data["petalwidthcm"].median()
+
+print("Petal Width Sum(cm):",sum_petalwidth, "\nMean Petal Width(cm):", mean_petalwidth, "\nMedian Petal width(cm):", median_petalwidth)
+
+with open("iris.txt", "a") as f:
+    data = f.write('\nTotal Petal width all species Sum(cm):'+str(sum_petalwidth))
+    data = f.write('\nMean Petal width all species (cm):'+str(mean_petalwidth))
+    data = f.write('\nMean Petal width all species (cm): '+str(median_petalwidth))
 
 
 
