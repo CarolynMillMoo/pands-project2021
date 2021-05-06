@@ -7,6 +7,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
+#Loading the data.
+
 data = pd.read_csv("iris.csv")
 
 #Species count: counting the instance of each species
@@ -167,15 +169,5 @@ with open("iris.txt", "a") as f:
    data = f.write('\n\nMinimum Petal length (cm): '+str(min_petallength))
    data = f.write('\n\nMaximum Petal length (cm): '+str(max_petallength))
    
-#The following plots the sepal width versus sepal length in the three seperate species
 
-iris = pd.read_csv("iris.csv")
-
-ratio = iris["sepallengthcm"]/iris["sepalwidthcm"]
-
-for name, group in iris.groupby("species"):
-    plt.scatter(group.index, ratio[group.index], label=name)
-
-plt.legend()
-plt.show()
 
