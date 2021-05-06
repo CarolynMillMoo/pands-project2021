@@ -11,4 +11,5 @@ References:
 5. For the groupby info used in the analysis.py file: https://stackoverflow.com/questions/63420600/how-can-calculate-the-sum-of-a-column-but-taking-specific-rows-of-it-in-python
 6.Scatterplot info: Topic08 scatterplot.py
 7.Scatterplot info: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
-8. 
+8. Scatterplot info: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+
