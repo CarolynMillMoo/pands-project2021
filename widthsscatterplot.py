@@ -1,4 +1,5 @@
-#The following plots the sepal length versus sepal width in the three seperate species
+#The following plots the petal width versus sepal width in the three seperate species
+#Out of curiousity plotted the widths of the petals vs width of the sepals
 #Author: Carolyn Moorhouse
 
 import pandas as pd
@@ -6,14 +7,14 @@ import matplotlib.pyplot as plt
 
 iris = pd.read_csv("iris.csv")
 
-xpoint = iris["sepallengthcm"]
+xpoint = iris["petalwidthcm"]
 ypoint = iris["sepalwidthcm"]
 
 for name, group in iris.groupby("species"):
     plt.scatter(xpoint[group.index], ypoint[group.index], label=name)
 
-plt.title("Sepal Length vs Sepal Width")
-plt.xlabel("Sepal Length (cm)")
+plt.title("Petal Width vs Sepal Width")
+plt.xlabel("Petal Width (cm)")
 plt.ylabel("Sepal Width (cm)")
 
 plt.legend()
