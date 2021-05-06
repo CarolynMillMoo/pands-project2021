@@ -169,14 +169,13 @@ with open("iris.txt", "a") as f:
    
 #The following plots the sepal width versus sepal length in the three seperate species
 
+iris = pd.read_csv("iris.csv")
 
-iris = sns.load_dataset("iris")
+ratio = iris["sepallengthcm"]/iris["sepalwidthcm"]
 
-
-sns.lmplot(x="sepal_length", y="sepal_width", data=iris, hue="species", fit_reg=False, legend=False)
+for name, group in iris.groupby("species"):
+    plt.scatter(group.index, ratio[group.index], label=name)
 
 plt.legend()
 plt.show()
-
-
 
