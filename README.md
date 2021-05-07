@@ -13,4 +13,5 @@ References:
 7.Scatterplot info: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
 8. Scatterplot info: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 9.Histogram: https://towardsdatascience.com/eda-of-the-iris-dataset-190f6dfd946d
+10.Histogram:https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 
