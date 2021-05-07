@@ -18,3 +18,8 @@ plt.ylabel("Petal Width (cm)")
 
 plt.legend()
 plt.show()
+
+#From this plot we can see that the Iris-setosa has much smaller petal length & width compared to the other 2 species
+#there is some crossover with the sizes of the Versicolor & virginica but it
+#can be seen that for the most part the Virginica species has the largest petal of the three.
+#Thus this information would be very useful in the identification of the three species
