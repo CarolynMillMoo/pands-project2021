@@ -9,13 +9,28 @@ import numpy as np
 
 #Loading the data.
 
+irisdata = pd.read_csv("iris.csv")
+ #the following gives an overview of the of the dataset in table format
+ 
+print(irisdata.head())
+
+#the following prints the shape of the dataset (rows, columns, counts)
+print(irisdata.shape)
+
+#the following prints out the statistical insights
+print(irisdata.describe())
+
+with open("iris.txt", "w") as f:
+    data = f.write('\n:Statistical Dataset for the Iris dataset'+str(irisdata.describe()))
+
+
 data = pd.read_csv("iris.csv")
 
 #Species count: counting the instance of each species
 #in the iris.txt file
 data["species"].value_counts()
 print(data["species"].value_counts())
-with open("iris.txt", "w") as f:
+with open("iris.txt", "a") as f:
     data = f.write("Instance of each species of iris: "+str(data["species"].value_counts()))
 
 #The following calculates the sum, mean and median of the sepal length for all species
@@ -169,5 +184,6 @@ with open("iris.txt", "a") as f:
    data = f.write('\n\nMinimum Petal length (cm): '+str(min_petallength))
    data = f.write('\n\nMaximum Petal length (cm): '+str(max_petallength))
    
+
 
 
